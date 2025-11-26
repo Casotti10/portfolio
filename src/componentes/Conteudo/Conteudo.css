@@ -1,0 +1,102 @@
+/* Fundo moderno com degradê */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  color: rgb(253, 253, 253);
+}
+
+/* Área de textos */
+.hero-text {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Tag tipo pill */
+.tag {
+  background: #0d47ff33;
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #8ab4ff;
+  font-size: 14px;
+  width: fit-content;
+}
+
+/* Título principal */
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+/* Destaque colorido */
+.nome-destaque {
+  color: #0b63ff;
+}
+
+.nome-destaque2 {
+  background-color: #0b63ff;
+  background-clip: text;;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Parágrafo */
+.descricao {
+  font-size: 18px;
+  width: 90%;
+  opacity: 0.9;
+}
+
+/* Área dos botões */
+.botoes {
+  display: flex;
+  gap: 20px;
+}
+
+/* Botão principal */
+.botao-primario {
+  background: #0b63ff;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.botao-primario:hover {
+  transform: scale(1.05);
+  background: #297aff;
+}
+
+/* Botão secundário */
+.botao-secundario {
+  background: transparent;
+  color: white;
+  border: 1px solid #7fa6ff;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.botao-secundario:hover {
+  background: #7fa6ff22;
+  transform: scale(1.05);
+}
+
+/* Texto extra expansível */
+.sobre-extra {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* Imagem com efeitos */
+.hero-imagem img {
+  width: 450px;
+  filter: drop-shadow(0 0 25px #005eff56);
+}

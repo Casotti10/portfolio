@@ -1,0 +1,53 @@
+/* Sessão principal dos projetos */
+.projetos-sessao {
+    display: flex;              /* Ativa o flexbox */
+    justify-content: center;    /* Centraliza horizontalmente */
+    flex-direction: column;     /* Elementos em coluna */
+    align-items: center;        /* Centraliza horizontalmente */
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+.projetos-sessao h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* Remove as bolinhas da lista */
+.lista-projetos {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo das imagens dos projetos */
+.lista-projetos img {
+    width: 50%;                 /* Imagem ocupa metade da largura */
+    border-radius: 10px;        /* Bordas arredondadas */
+}
+
+/* Estilo dos links dos projetos */
+.lista-projetos a { 
+    text-decoration: none;      /* Remove o sublinhado */
+    color: white;               /* Texto branco */
+    font-size: 15px;            /* Tamanho do texto */
+    margin: 10px;               /* Espaço externo */
+    border: 1px solid white;    /* Borda branca */
+    padding: 10px;              /* Espaçamento interno */
+    border-radius: 10px;        /* Bordas arredondadas */
+    transition: all 0.3s ease;
+}
+
+.lista-projetos a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Estilo de cada item da lista de projetos */
+.lista-projetos li {
+    margin-top: 20px;           /* Espaço entre cada item */
+    display: flex;              /* Flexbox para organizar o conteúdo */
+    flex-direction: column;     /* Conteúdos empilhados */
+    align-items: center;        /* Centraliza os itens */
+}

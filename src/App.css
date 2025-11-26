@@ -1,0 +1,148 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0b0f19, #0b1e3f);
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* CONTAINERS PADRÃO */
+.section {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    opacity: 0.7;
+    margin-bottom: 40px;
+}
+
+/* GLASS CARDS */
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 25px;
+    backdrop-filter: blur(8px);
+}
+
+/* GRID PADRÃO */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-4 {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* TAGS */
+.tag {
+    background: #111827;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 14px;
+    border: 1px solid #1f2937;
+    color: #9ca3af;
+}
+
+/* BOTÃO PRIMÁRIO */
+.btn-primary {
+    background: #007bff;
+    padding: 10px 22px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #0a84ff;
+    transform: translateY(-2px);
+}
+
+/* EFEITO DE LUZ DE FUNDO */
+.glow {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0, 150, 255, 0.12), transparent 70%);
+    filter: blur(60px);
+    z-index: -1;
+}
+
+.footer {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(8px);
+
+    padding: 35px;
+    margin: 60px auto 20px;
+    border-radius: 14px;
+    width: 90%;
+    max-width: 650px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+
+    color: #f0f6fc;
+}
+
+.footer h4 {
+    font-size: 22px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #c9d1d9;
+    text-decoration: none;
+    font-size: 17px;
+
+    padding: 10px 15px;
+    border-radius: 8px;
+
+    transition: 0.25s;
+}
+
+.contato-item img {
+    width: 22px;
+    opacity: 0.8;
+    filter: drop-shadow(0 0 4px #1b1d2855);
+}
+
+.contato-item:hover {
+    background: rgba(41, 121, 255, 0.08);
+    transform: translateY(-2px);
+    color: white;
+}
+
+.contato-item:hover img {
+    opacity: 1;
+}

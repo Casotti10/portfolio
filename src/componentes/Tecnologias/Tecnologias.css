@@ -1,0 +1,43 @@
+.tecnologias-container {
+  background: linear-gradient(#09162f, #061124);  /* Caixa */
+  padding: 40px;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1200px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  border: 1px solid #161b22;
+}
+
+/* Título */
+.titulo {
+  color: #ffffff;
+  font-size: 27px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Lista de tecnologias */
+.tech-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Cada item */
+.tech-item {
+  background: #1e2633;
+  padding: 10px 22px;
+  color: #c3c7ce;
+  border-radius: 999px;
+  font-size: 16px;
+  border: 1px solid #2c3445;
+  transition: 0.2s;
+}
+
+.tech-item:hover {
+  background: #2a3548;
+  color: white;
+  transform: scale(1.05);
+}
