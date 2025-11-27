@@ -2,7 +2,7 @@ import Header from "./componentes/Header/Header";
 import Conteudo from "./componentes/Conteudo/Conteudo";
 import Projetos from "./componentes/Projetos/Projetos";
 import "./App.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Technologies from "./componentes/Tecnologias/Tecnologias";
 
 function App() {
@@ -20,12 +20,28 @@ function App() {
       caminhoDaImagem: "src/assets/vite.png",
     },
   ]);
+
+  // 🔥 Referência para a seção de projetos
+  const projetosRef = useRef(null);
+
+  // 🔥 Função que faz o scroll suave
+  const scrollToProjetos = () => {
+    projetosRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="conteudo-principal">
       <Header />
-      <Conteudo />
-      <Technologies/>
-      <Projetos projetos={projetos} />
+
+      {/* Envia a função para o botão */}
+      <Conteudo onClickProjetos={scrollToProjetos} />
+
+      <Technologies />
+
+      {/* Aplica o ref na seção de projetos */}
+      <div ref={projetosRef}>
+        <Projetos projetos={projetos} />
+      </div>
 
       <footer className="footer">
         <h4>Contato</h4>
@@ -53,4 +69,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
