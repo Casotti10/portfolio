@@ -4,12 +4,13 @@ import Projetos from "./componentes/Projetos/Projetos";
 import "./App.css";
 import { useState, useRef } from "react";
 import Technologies from "./componentes/Tecnologias/Tecnologias";
+import Footer from "./componentes/Footer/Footer";
 
 function App() {
   const [projetos, setProjetos] = useState([
     {
-      linkDoGithub: "https://github.com/Casotti10",
-      caminhoDaImagem: "src/assets/facebook.png",
+      linkDoGithub: "https://github.com/Casotti10/controle-financas",
+      caminhoDaImagem: "src/assets/Financeiro.png",
     },
     {
       linkDoGithub: "https://github.com/Casotti10",
@@ -41,31 +42,10 @@ function App() {
       {/* Aplica o ref na seção de projetos */}
       <div ref={projetosRef}>
         <Projetos projetos={projetos} />
-      </div>
+      </div> 
 
-      <footer className="footer">
-        <h4>Contato</h4>
+      <Footer/>
 
-        <a href="mailto:lucascasotti1@gmail.com" className="contato-item">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
-            alt="Email"
-          />
-          lucascasotti1@gmail.com
-        </a>
-
-        <a
-          href="https://wa.me/5535999242238"
-          target="_blank"
-          className="contato-item"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-            alt="WhatsApp"
-          />
-          (35) 99924-2238
-        </a>
-      </footer>
     </div>
   );
 }

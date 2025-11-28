@@ -11,14 +11,24 @@ function Projetos({ projetos }) {
       <div className="grid-projetos">
         {projetos.map((projeto, index) => (
           <div className="card-projeto" key={index}>
+            
             <img
               className="imagem-projeto"
               src={projeto.caminhoDaImagem}
-              alt={`Projeto ${index + 1}`}
+              alt={
+                index === 0
+                  ? "Sistema de Gestão Financeiro Pessoal"
+                  : `Projeto ${index + 1}`
+              }
             />
 
             <div className="conteudo-card">
-              <h3 className="titulo-card">Projeto {index + 1}</h3>
+              <h3 className="titulo-card">
+                {index === 0
+                  ? "Sistema de Gestão Financeiro Pessoal"
+                  : `Projeto ${index + 1}`}
+              </h3>
+
               <p className="descricao-card">
                 Clique para acessar o código deste projeto no GitHub.
               </p>
@@ -31,6 +41,7 @@ function Projetos({ projetos }) {
                 Ver Projeto
               </a>
             </div>
+
           </div>
         ))}
       </div>
