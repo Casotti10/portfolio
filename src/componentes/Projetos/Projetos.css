@@ -1,8 +1,7 @@
 .projetos-container {
     padding: 80px 20px;
     text-align: center;
-    background: linear-gradient( 135deg, rgba(20, 28, 46, 0.90),  rgba(10, 10, 20, 0.90)
-);
+    background: linear-gradient( 90deg, #02132c00, #040e2500);
     color: white;
 }
 
